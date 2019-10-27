@@ -1,0 +1,22 @@
+img {
+  height: 3em;
+  width: 3em;
+  padding-right: .5em;
+}
+
+#message-body {
+  background-color: white;
+  margin: 150px 150px 150px 150px;
+  border-radius: 12px;
+  justify-content: center;
+  padding: 1em;
+}
+
+.chat-output {
+  margin-top: 2em;
+  margin-left: 225px;
+  background-color: rgb(53, 206, 233);
+  border-radius: 12px;
+  width: 50%;
+  color: rgb(244, 45, 138);
+}
