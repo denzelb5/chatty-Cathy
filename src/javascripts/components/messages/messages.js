@@ -1,6 +1,7 @@
 import utilities from '../../helpers/utilities';
 import d from '../../helpers/data';
 import './messages.scss';
+import t from '../timestamp/timestamp';
 
 const printMessages = () => {
   let domString = '';
@@ -11,6 +12,7 @@ const printMessages = () => {
     // domString += '</div>';
   });
   utilities.printToDom(domString, 'message-body');
+  t.getTime();
 };
 
 export default { printMessages };
