@@ -3,7 +3,7 @@ import d from '../../helpers/data';
 import m from '../messages/messages';
 
 const printNewMessage = () => {
-  $('#input-box').on('keydown', (e) => {
+  $('#input-box').on('keyup', (e) => {
     const newMessage = $('#input-box').val().toLowerCase();
     const messageArray = d.getMessages();
     const newData = {};
@@ -12,11 +12,13 @@ const printNewMessage = () => {
       newData.message = newMessage;
       newData.id = $('#user1');
       messageArray.push(newData);
+      $('#input-box').val('');
     } else if (e.keyCode === 13 && $('#check2').is(':checked')) {
       newData.avatar = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQcKVrFa5_weBOxqvU6S45sRG17e18OOo37-Am7eaPF1OvZ8Gkt';
       newData.message = newMessage;
       newData.id = $('#user2');
       messageArray.push(newData);
+      $('#input-box').val('');
     }
     m.printMessages(messageArray);
   });
