@@ -10,13 +10,16 @@ img {
   border-radius: 12px;
   justify-content: center;
   padding: 1em;
+  border: 1px solid rgb(244, 45, 138);
 }
 
 .chat-output {
   margin-top: 2em;
   margin-left: 225px;
   background-color: rgb(53, 206, 233);
-  border-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
   width: 50%;
   color: rgb(244, 45, 138);
+  border: 1px solid rgb(244, 45, 138);
 }
